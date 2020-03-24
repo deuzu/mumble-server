@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+    murmur:
+        image: phlak/mumble
+        volumes:
+            - mumble:/etc/mumble
+        ports:
+            - 64738:64738/tcp
+            - 64738:64738/udp
+            - 50051:50051
+
+volumes:
+    mumble: ~
+
