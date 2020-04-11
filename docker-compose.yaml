@@ -5,6 +5,7 @@ services:
         image: phlak/mumble
         volumes:
             - mumble:/etc/mumble
+            - ./docker/config.ini:/etc/mumble/config.ini
         ports:
             - 64738:64738/tcp
             - 64738:64738/udp
@@ -12,4 +13,3 @@ services:
 
 volumes:
     mumble: ~
-

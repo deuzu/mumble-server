@@ -1,8 +1,6 @@
-.PHONY: all docker clean
+.PHONY: install clean
 
-all: docker
-
-docker:
+install:
 	@docker-compose up --detach --remove-orphans
 
 clean:
